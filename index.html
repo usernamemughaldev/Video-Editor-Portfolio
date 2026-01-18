@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" class="antialiased">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VFX // Editor Portfolio</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8b5cf6',
+                        accent: '#ec4899',
+                        surface: '#1e1b4b',
+                        dark: '#0f172a'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Oswald', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark text-white overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full p-6 flex justify-between items-center z-50 mix-blend-difference">
+        <div class="text-2xl font-display font-bold tracking-tighter">MUGHAL<span class="text-primary">.CUTS</span></div>
+        <a href="#contact" class="group relative px-6 py-2 overflow-hidden border border-white/20 rounded-full hover:border-accent transition-colors duration-300">
+            <span class="relative z-10 text-sm uppercase tracking-widest font-bold group-hover:text-accent transition-colors">Let's Talk</span>
+            <div class="absolute inset-0 bg-white/5 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex flex-col justify-center items-center perspective-1000">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1535016120720-40c6874c3b1c?q=80&w=2664&auto=format&fit=crop')] bg-cover bg-center opacity-10 filter blur-xl"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-dark/0 via-dark/50 to-dark"></div>
+        
+        <h1 class="hero-text text-[12vw] leading-[0.85] font-display font-bold text-center uppercase relative z-10">
+            <div class="overflow-hidden"><span class="block reveal-text">Visual</span></div>
+            <div class="overflow-hidden"><span class="block reveal-text text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Storyteller</span></div>
+        </h1>
+        
+        <div class="mt-12 flex gap-4 opacity-0 hero-cta">
+            <span class="px-4 py-1 rounded-full border border-primary/30 text-primary text-xs uppercase tracking-widest">Premiere Pro</span>
+            <span class="px-4 py-1 rounded-full border border-accent/30 text-accent text-xs uppercase tracking-widest">After Effects</span>
+            <span class="px-4 py-1 rounded-full border border-white/10 text-gray-400 text-xs uppercase tracking-widest">Blender 3D</span>
+        </div>
+
+        <div class="absolute bottom-10 left-10 text-xs text-gray-500 uppercase tracking-widest animate-pulse">
+            Scroll to Explore
+        </div>
+    </header>
+
+    <!-- Bento Grid Portfolio -->
+    <section class="relative py-24 px-4 md:px-12 z-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16">
+                <h2 class="text-4xl md:text-6xl font-display font-bold uppercase mb-4">
+                    Selected <span class="text-primary">Works</span>
+                </h2>
+                <p class="text-gray-400 max-w-xl">A curation of high-impact edits, motion graphics, and color grading projects.</p>
+            </div>
+
+            <!-- Grid Container -->
+            <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-6 auto-rows-[300px]">
+                
+                <!-- Card 1: Large Video Feature -->
+                <div class="bento-card col-span-1 md:col-span-2 lg:col-span-8 row-span-2 group">
+                    <div class="bento-content bg-surface/30 border border-white/5">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44c?q=80&w=2670&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700 ease-out" alt="Commercial Edit">
+                        <div class="absolute bottom-0 left-0 p-8 w-full bg-gradient-to-t from-dark to-transparent">
+                            <h3 class="text-3xl font-display font-bold uppercase translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Nike Commercial</h3>
+                            <p class="text-primary text-sm font-bold tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">VFX / Sound Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Stats / Info -->
+                <div class="bento-card col-span-1 md:col-span-2 lg:col-span-4 row-span-1 group">
+                    <div class="bento-content bg-gradient-to-br from-[#1e1b4b] to-[#2e1065] border border-white/5 flex flex-col justify-center items-center text-center p-6">
+                        <span class="text-6xl font-display font-bold text-accent mb-2 count-up" data-val="150">0</span>
+                        <span class="text-sm uppercase tracking-widest text-gray-300">Projects Completed</span>
+                    </div>
+                </div>
+
+                <!-- Card 3: Vertical Reel -->
+                <div class="bento-card col-span-1 md:col-span-2 lg:col-span-4 row-span-2 group">
+                     <div class="bento-content bg-surface/30 border border-white/5">
+                        <div class="absolute inset-0 bg-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <img src="https://images.unsplash.com/photo-1616469829941-c7200edec809?q=80&w=2670&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" alt="Music Video">
+                        <div class="absolute top-6 right-6">
+                            <div class="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-8 left-8">
+                            <h3 class="text-2xl font-display font-bold uppercase">Trap Music Video</h3>
+                            <p class="text-accent text-xs uppercase tracking-widest">Color Grading</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Social / Contact Mini -->
+                <div class="bento-card col-span-1 md:col-span-2 lg:col-span-4 row-span-1 group">
+                     <div class="bento-content bg-surface/30 border border-white/5 flex flex-col justify-between p-6 hover:border-primary/50 transition-colors duration-300">
+                        <div class="text-gray-400">
+                             <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold">@MughalCuts</h4>
+                            <p class="text-xs text-gray-500">Follow for dailies</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: Text Block -->
+                <div class="bento-card col-span-1 md:col-span-2 lg:col-span-4 row-span-1 group">
+                    <div class="bento-content bg-primary border border-primary text-white p-8 flex flex-col justify-center items-start">
+                        <h3 class="text-2xl font-bold mb-2">Editing Logic</h3>
+                        <p class="text-sm opacity-80 leading-relaxed">"Rhythm is the heartbeat of the edit. I cut on the beat, but I flow with the emotion."</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Scrolling Text / Services -->
+    <section class="py-20 overflow-hidden bg-primary/10">
+        <div class="marquee-container flex gap-8 whitespace-nowrap">
+            <span class="text-8xl font-display font-bold text-transparent stroke-text opacity-30">VIDEO EDITING — VFX — SOUND DESIGN — COLOR GRADING —</span>
+            <span class="text-8xl font-display font-bold text-transparent stroke-text opacity-30">VIDEO EDITING — VFX — SOUND DESIGN — COLOR GRADING —</span>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="h-screen flex items-center justify-center relative">
+        <div class="absolute inset-0 bg-gradient-to-t from-accent/20 to-dark"></div>
+        <div class="text-center z-10">
+            <p class="text-primary font-bold tracking-widest mb-4">READY TO CREATE?</p>
+            <a href="mailto:hello@mughal.dev" class="block text-6xl md:text-9xl font-display font-bold text-white hover:text-accent transition-colors duration-500 cursor-none email-trigger">
+                START A<br>PROJECT
+            </a>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
